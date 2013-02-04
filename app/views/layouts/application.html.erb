@@ -6,17 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "FriendFeed" %></title>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag "bootstrap.min", :media => "screen" %>
-    <%= stylesheet_link_tag "bootstrap-responsive.min", :media => "screen" %>
-    <%= stylesheet_link_tag "font-awesome" %>
-    <%= stylesheet_link_tag "animate" %>
-    <%= stylesheet_link_tag "style.min", :media => "screen" %>
-
+	
     <%= stylesheet_link_tag "application", :media => "all" %>
 
 		<!--[if IE 7]>
-			<link href="css/font-awesome-ie7.css" rel="stylesheet">
+			<link href="/assets/font-awesome-ie7.css" rel="stylesheet">
 		<![endif]-->
 
 		<!--[if lt IE 9]>
