@@ -6,7 +6,9 @@ gem 'rails', '3.2.11'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development do
-	gem 'sqlite3'
+  gem 'sqlite3'
+  gem 'rspec-rails'
+  gem 'guard-rspec'
 end
 
 
@@ -17,9 +19,10 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.2'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
+  gem 'therubyracer', :platforms => :ruby
   gem 'uglifier', '>= 1.2.3'
+  gem 'less-rails'
+  gem 'twitter-bootstrap-rails'
 end
 
 gem 'jquery-rails'
@@ -38,3 +41,15 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+group :test do
+  gem 'capybara'
+  gem 'rb-inotify', '~> 0.8.8'
+  gem 'libnotify'
+  gem 'guard-spork'
+  gem 'spork'
+end
+
+group :production do
+  gem 'pg', '0.12.2'
+end
